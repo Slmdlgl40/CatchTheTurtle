@@ -24,6 +24,15 @@ def catch_turtle(saniye):
     kaplumbaga.shape("turtle")
     kaplumbaga.shapesize(2,2,1)
 
+    def artir_score(x,y):
+        nonlocal puan
+        puan += 1
+        score.clear()
+        score.sety(yukseklik - 70)
+        score.write("Score:" + str(puan), align="center", font=("Arial", 50, "normal"))
+
+    kaplumbaga.onclick(artir_score)
+
     while saniye >= 0:
         sayac.clear()
         sayac.sety(yukseklik)
