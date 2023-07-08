@@ -3,11 +3,14 @@ import time
 import random
 
 turtle_screen = turtle.Screen()
-turtle_screen.bgcolor("light blue")
+turtle_screen.bgcolor("dark blue")
 turtle_screen.title("Catch The Turtle")
 kaplumbaga = turtle.Turtle()
 sayac = turtle.Turtle()
 score = turtle.Turtle()
+kaplumbaga.color("green")
+sayac.color("yellow")
+score.color("red")
 def catch_turtle(saniye):
     def rastgele_konum():
         x = random.randint(-400, 400)
